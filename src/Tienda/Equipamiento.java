@@ -29,6 +29,18 @@ public class Equipamiento extends ProductoBase {
     }
 
     @Override
+    public String toString() {
+        return "Equipamiento{" +
+                "codigo='" + codigo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", deporte='" + deporte + '\'' +
+                ", marca='" + marca + '\'' +
+                ", precio=" + precio +
+                ", stock=" + stock +
+                '}';
+    }
+
+    @Override
     public String getInfo() {
         return "Equipamiento{" +
                 "deporte='" + deporte + '\'' +

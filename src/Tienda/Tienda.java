@@ -18,11 +18,16 @@ public class Tienda {
     }
 
     public void eliminarProducto(String codigo){
+        Producto prod = null;
         for (Producto producto : this.inventario) {
             if (producto.getCodigo().equals(codigo)) {
-                System.out.println();
+            prod = producto;
+
             }
         }
+
+        this.inventario.remove(prod);
+
     }
 
     public void actualizarProducto(String codigo, double nuevoPrecio, int nuevoStock) {

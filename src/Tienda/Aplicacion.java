@@ -81,7 +81,9 @@ public class Aplicacion {
 
                     break;
                 case 3:
-
+                    System.out.println("¿Cuál es el código?");
+                    String cod = sc.nextLine();
+                    tienda.eliminarProducto(cod);
                     break;
                 case 4:
                     break;

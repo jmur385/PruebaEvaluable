@@ -29,6 +29,18 @@ public class RopaDeportiva extends ProductoBase{
     }
 
     @Override
+    public String toString() {
+        return "RopaDeportiva{" +
+                "codigo='" + codigo + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", talla='" + talla + '\'' +
+                ", material='" + material + '\'' +
+                ", precio=" + precio +
+                ", stock=" + stock +
+                '}';
+    }
+
+    @Override
     public String getInfo() {
         return "RopaDeportiva{" +
                 "talla='" + talla + '\'' +
