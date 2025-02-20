@@ -1,5 +1,7 @@
 package Tienda;
 
+import java.util.UUID;
+
 public abstract class ProductoBase implements Producto {
 
     protected String codigo;
@@ -7,8 +9,8 @@ public abstract class ProductoBase implements Producto {
     protected Double precio;
     protected Integer stock;
 
-    public ProductoBase(String codigo, String nombre, Double precio, Integer stock) {
-        this.codigo = codigo;
+    public ProductoBase(String nombre, Double precio, Integer stock) {
+        this.codigo = UUID.randomUUID().toString();
         this.nombre = nombre;
         this.precio = precio;
         this.stock = stock;

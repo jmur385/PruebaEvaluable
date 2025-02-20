@@ -5,9 +5,9 @@ public class RopaDeportiva extends ProductoBase{
     private String talla;
     private String material;
 
-    public RopaDeportiva(String codigo, String nombre, Double precio,
+    public RopaDeportiva(String nombre, Double precio,
                          Integer stock, String talla, String material) {
-        super(codigo, nombre, precio, stock);
+        super(nombre, precio, stock);
         this.talla = talla;
         this.material = material;
     }

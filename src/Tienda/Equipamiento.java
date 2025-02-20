@@ -5,9 +5,9 @@ public class Equipamiento extends ProductoBase {
     private String deporte;
     private String marca;
 
-    public Equipamiento(String codigo, String nombre, Double precio,
+    public Equipamiento(String nombre, Double precio,
                         Integer stock, String deporte, String marca) {
-        super(codigo, nombre, precio, stock);
+        super(nombre, precio, stock);
         this.deporte = deporte;
         this.marca = marca;
     }
